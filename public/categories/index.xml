@@ -6,6 +6,21 @@
     <description>Recent content in Categories on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 12 May 2025 00:00:00 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>演奏会情報</title>
+      <link>http://localhost:1313/categories/%E6%BC%94%E5%A5%8F%E4%BC%9A%E6%83%85%E5%A0%B1/</link>
+      <pubDate>Mon, 12 May 2025 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/categories/%E6%BC%94%E5%A5%8F%E4%BC%9A%E6%83%85%E5%A0%B1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>演奏会報告</title>
+      <link>http://localhost:1313/categories/%E6%BC%94%E5%A5%8F%E4%BC%9A%E5%A0%B1%E5%91%8A/</link>
+      <pubDate>Sun, 10 Jul 2022 19:30:00 +0900</pubDate>
+      <guid>http://localhost:1313/categories/%E6%BC%94%E5%A5%8F%E4%BC%9A%E5%A0%B1%E5%91%8A/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
