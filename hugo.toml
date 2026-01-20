@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "https://kinokawa-string.com/"
+baseURL = "https://friendly-mousse-622583.netlify.app"
 languageCode = "ja-jp"
 summaryLength = "100"
 hasCJKLanguage = true
