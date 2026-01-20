@@ -1,5 +1,78 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'kinokawa-string-theme'
+# default configuration
+baseURL = "https://kinokawa-string.com/"
+languageCode = "ja-jp"
+summaryLength = "100"
+hasCJKLanguage = true
+theme = "kinokawa-string-theme"
+title = "きのかわ弦楽合奏団"
 
+# css plugins
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+
+# menu
+[[menu.main]]
+URL = "about/"
+name = "About"
+weight = 1
+
+[[menu.main]]
+URL = "blog/"
+name = "Blog"
+weight = 2
+
+[[menu.main]]
+URL = "contact/"
+name = "Contact"
+weight = 3
+
+
+# default parameters
+[params]
+home = "Home"
+logo = ""
+# theme color
+theme_color = "black"
+# meta description
+author = "Yuki Okugawa"
+description = "きのかわ弦楽合奏団ホームページ"
+# google analytics
+google_analytics_id = "" # Your ID
+# baidu site verification
+baidu_site_verification = "" #Your verification code
+# baidu analytics
+baidu_analytics_id = "" #Your ID
+# copyright
+copyright = "Copyright &copy; 2021 Yuki Okugawa; Powered by [Kross Hugo](https://github.com/themefisher/kross-hugo)"
+
+# preloader
+[params.preloader]
+enable = true
+content = "Loading...♪"
+
+# contact
+[params.contact]
+enable = false
+
+# cookies
+[params.cookies]
+enable = false
+
+# social site
+[[params.social]]
+icon = "ti-facebook"
+title = "Facebook"
+linkText = "kinokawa.string"
+URL = "https://www.facebook.com/kinokawa.string/"
+
+[[params.social]]
+icon = "ti-instagram"
+title = "Instagram"
+linkText = "kinogen_string"
+URL = "https://www.instagram.com/kinogen_string/"
+
+[[params.social]]
+icon = "ti-email"
+title = "Email"
+linkText = "kinokawa.string@gmail.com"
+URL = "mailto:kinokawa.string@gmail.com"

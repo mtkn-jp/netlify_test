@@ -1,0 +1,46 @@
+# banner
+banner:
+  title : "きのかわを、<br/>音楽と、<br/>共に。"
+
+topImage:
+  "images/topImage.jpg"
+
+pr:
+  enable: true
+  category: "演奏会情報"
+
+# about
+about:
+  enable : true
+  content : "きのかわ弦楽合奏団は2013年より活動しているアマチュア弦楽合奏団です。音楽を通じ、地域の音楽文化の向上と住民福祉の向上に努めることを目的に活動を行っています。"
+  button:
+    enable : true
+    label : "know more"
+    URL : "about"
+
+# service
+service:
+  enable : true
+  title : "Activities"
+  item:
+    - title : "練習"
+      icon : "ti-face-smile"
+      content : "- 和歌山市内コミュニティセンターにて\n- 第２、第４日曜日\n- 9：00～12：00"
+      highlighted : false
+
+    - title : "演奏会"
+      icon : "ti-music"
+      content : "年に一度の定期演奏会、コミュニティセンターでのコミュニティコンサートを活動の柱にその他、ボランティアの依頼公演を行っています。"
+      highlighted : true
+
+    - title : "募集"
+      icon : "ti-user"
+      content :
+        "入団希望、見学希望の方は<a href='mailto:kinokawa.string@gmail.com'>kinokawa.string@gmail.com</a>までご連絡下さい。"
+      highlighted : false
+
+# blog
+blog:
+  enable : true
+  title : "Blogs"
+  # blog post comes from "content/blog" folder
