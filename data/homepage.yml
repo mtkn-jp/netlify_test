@@ -18,8 +18,8 @@ about:
     label : "know more"
     URL : "about"
 
-# service
-service:
+# activities
+activitie:
   enable : true
   title : "Activities"
   item:

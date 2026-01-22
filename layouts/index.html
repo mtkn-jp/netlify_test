@@ -1,0 +1,63 @@
+{{ define "main" }}
+  <h1>{{ site.Data.homepage.banner.title | safeHTML }}</h1>
+
+  {{ if site.Data.homepage.topImage }}
+		{{ with resources.Get site.Data.homepage.topImage }}
+			{{ $jpgImg := .Resize (printf "%dx%d jpg" .Width .Height) }}
+			<picture>
+				<img width="{{ .Width }}" height="{{ .Height }}" src="{{ $jpgImg.RelPermalink }}" alt="bg-shape">
+			</picture>
+		{{ end }}
+  {{ else }}
+  {{ end }}
+
+    <ul>
+      {{ range site.Params.social }}
+      <li>{{.title}}: <a href="{{.URL | safeURL }}">{{.linkText}}</a></li>
+      {{ end }}
+    </ul>
+
+  {{ if site.Data.homepage.about.enable }}
+	  <!-- about -->
+	  {{ with site.Data.homepage.about }}
+	  <p>{{.content | markdownify}}</p>
+	  {{ if .button.enable }}
+	  {{ with .button }}
+	  <a href="{{ .URL | absURL }}">{{.label}}</a>
+	  {{ end }}
+	  {{ end }}
+	  {{ end }}
+	  <!-- /about -->
+  {{ end }}
+
+  {{ if site.Data.homepage.pr.enable }}
+          <h2 class="section-title">{{site.Data.homepage.pr.category }}</h2>
+		{{ range (first 2 ( where .Site.Pages ".Params.categories" "intersect" (slice site.Data.homepage.pr.category) )).ByDate.Reverse }}
+        {{ .Render "post" }}
+        {{ end }}
+  {{ end }}
+
+  {{ if site.Data.homepage.activitie.enable }}
+  {{ with site.Data.homepage.activitie }}
+  <!-- activities -->
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
+        {{ range .item }}
+                <i class="{{.icon }} icon mb-5 d-inline-block"></i>
+                <h4 class="mb-4">{{.title}}</h4>
+              <div>{{.content | markdownify}}</div>
+        {{ end }}
+  <!-- /activities -->
+  {{ end }}
+  {{ end }}
+
+  {{ if site.Data.homepage.blog.enable }}
+  <!-- blog -->
+          <h2 class="section-title">{{site.Data.homepage.blog.title | markdownify }}</h2>
+        {{ range (first 3 (where .Site.RegularPages "Section" "blog")).ByDate.Reverse }}
+        {{ .Render "post" }}
+        {{ end }}
+  <!-- /blog -->
+  {{ end }}
+
+
+{{ end }}
