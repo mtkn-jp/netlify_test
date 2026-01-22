@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "https://friendly-mousse-622583.netlify.app"
+baseURL = "localhost:1313"
 languageCode = "ja-jp"
 summaryLength = "100"
 hasCJKLanguage = true

@@ -2,13 +2,8 @@
   <meta charset="utf-8">
   <title>{{ .Title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-
-
-  {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  {{ $styles := resources.Get "css/style.scss" | css.Sass | minify }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
-
-  {{ "<!--Favicon-->" | safeHTML }}
+  {{ $styles := resources.Get "css/style.css" }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}">
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
 
