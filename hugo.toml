@@ -3,7 +3,6 @@ baseURL = "localhost:1313"
 languageCode = "ja-jp"
 summaryLength = "100"
 hasCJKLanguage = true
-theme = "kinokawa-string-theme"
 title = "きのかわ弦楽合奏団"
 
 # css plugins
