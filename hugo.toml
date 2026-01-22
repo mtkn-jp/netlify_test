@@ -30,24 +30,9 @@ weight = 3
 [params]
 home = "Home"
 logo = ""
-# theme color
-theme_color = "black"
-# meta description
 author = "Yuki Okugawa"
 description = "きのかわ弦楽合奏団ホームページ"
-# google analytics
-google_analytics_id = "" # Your ID
-# baidu site verification
-baidu_site_verification = "" #Your verification code
-# baidu analytics
-baidu_analytics_id = "" #Your ID
-# copyright
 copyright = "Copyright &copy; 2021 Yuki Okugawa; Powered by [Kross Hugo](https://github.com/themefisher/kross-hugo)"
-
-# preloader
-[params.preloader]
-enable = true
-content = "Loading...♪"
 
 # contact
 [params.contact]
