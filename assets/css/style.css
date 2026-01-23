@@ -1,0 +1,59 @@
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px;
+}
+
+header nav ul {
+}
+
+header .home {
+  font-size: 1.26em;
+  font-weight: 700;
+}
+
+header .menu {
+  display: flex;
+  margin: 0;
+}
+
+header .menu-item {
+  list-style: none;
+  margin-left: 10px;
+}
+
+body {
+	margin: 0;
+}
+
+#home-banner-text {
+	color: white;
+	position: absolute;
+	top: 20%;
+	left: 5%;
+}
+
+#home-banner-picture img {
+	width: 100%;
+}
+
+#home-pr {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#home-pr > * {
+	margin: 10px;
+	max-width: 200px;
+}
+
+#home-pr img {
+	width: 100%;
+}
