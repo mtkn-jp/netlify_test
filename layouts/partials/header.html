@@ -1,40 +1,25 @@
-<header class="navigation fixed-top" id="navbar">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="{{ site.BaseURL }}">
+<header>
+  <nav>
+    <a href="{{ site.BaseURL }}">
       {{ if site.Params.logo }}
-      <img decoding="async" src="{{ site.Params.logo | absURL }}" alt="{{site.Title}}">
+      <img src="{{ site.Params.logo | absURL }}" alt="{{site.Title}}">
       {{ else }}
-      <h3 class="text-white font-secondary">{{site.Title}}</h3>
+      {{site.Title}}
       {{ end }}
     </a>
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{{ site.BaseURL }}">{{ with site.Params.Home }} {{ . }} {{ end }}</a>
+      <ul>
+        <li>
+          <a href="{{ site.BaseURL }}">{{ with site.Params.Home }} {{ . }} {{ end }}</a>
         </li>
         {{ $current := . }}
         {{ range site.Menus.main }}
         {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
         {{ $active = or $active (eq .Name $current.Title) }}
-        {{ if .HasChildren }}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ .Name }}
-          </a>
-          <div class="dropdown-menu" >
-            {{ range .Children }}
-            <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
-            {{ end }}
-          </div>
+        <li class="{{ if $active }}active{{ end }}">
+          <a href="{{ .URL | absURL }}">{{ .Name }}</a>
         </li>
-        {{ else }}
-        <li class="nav-item {{ if $active }}active{{ end }}">
-          <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
-        </li>
-        {{ end }}
         {{ end }}
       </ul>
-    </div>
   </nav>
 </header>
