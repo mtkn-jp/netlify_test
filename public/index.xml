@@ -106,5 +106,19 @@
       <guid>//localhost:1313/blog/20220509/</guid>
       <description>&lt;p&gt;第5回では、古典派作品を特集します。&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;p&gt;2013年12月、地域のアマチュア音楽家が集い、発足しました。&#xA;和歌山県北部を拠点に活動しており、地域のコミュニティセンターでの依頼演奏や子どものためのコンサートを行うなど、地域の音楽文化の向上と広がりを求めて活動を行っています。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>//localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/contact/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

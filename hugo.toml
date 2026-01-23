@@ -34,14 +34,6 @@ author = "Yuki Okugawa"
 description = "きのかわ弦楽合奏団ホームページ"
 copyright = "Copyright &copy; 2021 Yuki Okugawa; Powered by [Kross Hugo](https://github.com/themefisher/kross-hugo)"
 
-# contact
-[params.contact]
-enable = false
-
-# cookies
-[params.cookies]
-enable = false
-
 # social site
 [[params.social]]
 icon = "ti-facebook"
