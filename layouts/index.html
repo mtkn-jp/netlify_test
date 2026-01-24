@@ -10,7 +10,7 @@
 		{{ end }}
   {{ else }}
   {{ end }}
-  <h1 id="home-banner-text">{{ site.Data.homepage.banner.title | safeHTML }}</h1>
+  <div id="home-banner-text">{{ site.Data.homepage.banner.title | safeHTML }}</div>
 </div>
 
     <ul>
@@ -20,7 +20,7 @@
     </ul>
 
   {{ if site.Data.homepage.about.enable }}
-  <section>
+  <section class="home-section">
 	  <div id="home-about">
 	  {{ with site.Data.homepage.about }}
 	  <p>{{.content | markdownify}}</p>
@@ -37,10 +37,10 @@
   {{ end }}
 
   {{ if site.Data.homepage.pr.enable }}
-  <section>
+  <section class="home-section">
   <h2>{{site.Data.homepage.pr.category }}</h2>
-	<div id="home-pr">
-		{{ range (first 5 ( where .Site.Pages ".Params.categories" "intersect" (slice site.Data.homepage.pr.category) )).ByDate.Reverse }}
+	<div class="card-box">
+		{{ range (first 3 ( where .Site.Pages ".Params.categories" "intersect" (slice site.Data.homepage.pr.category) )).ByDate.Reverse }}
         {{ .Render "post" }}
         {{ end }}
 	</div>
@@ -48,13 +48,12 @@
   {{ end }}
 
   {{ if site.Data.homepage.activitie.enable }}
-  <section>
+  <section class="home-section">
   {{ with site.Data.homepage.activitie }}
   <!-- activities -->
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
+          <h2>{{ .title | markdownify }}</h2>
         {{ range .item }}
-                <i class="{{.icon }} icon mb-5 d-inline-block"></i>
-                <h4 class="mb-4">{{.title}}</h4>
+                <h4>{{.title}}</h4>
               <div>{{.content | markdownify}}</div>
         {{ end }}
   <!-- /activities -->
@@ -63,12 +62,14 @@
   {{ end }}
 
   {{ if site.Data.homepage.blog.enable }}
-  <section>
+  <section class="home-section">
   <!-- blog -->
-          <h2 class="section-title">{{site.Data.homepage.blog.title | markdownify }}</h2>
+          <h2>{{site.Data.homepage.blog.title | markdownify }}</h2>
+		<div class="card-box">
         {{ range (first 3 (where .Site.RegularPages "Section" "blog")).ByDate.Reverse }}
         {{ .Render "post" }}
         {{ end }}
+		</div>
   <!-- /blog -->
 	</section>
   {{ end }}

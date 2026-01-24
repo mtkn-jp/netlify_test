@@ -14,9 +14,10 @@ header nav {
   padding: 20px;
 }
 
-header .home {
+header #home-h1 {
   font-size: 1.26em;
   font-weight: 700;
+  margin: 0;
 }
 
 header .menu {
@@ -41,9 +42,11 @@ body {
 
 #home-banner-text {
 	color: white;
+	font-size: 3em;
+	font-weight: 700; 
 	position: relative;
 	margin: 0;
-	padding: 10%;
+	padding: 10% 0 10% 20%;
 }
 
 #home-banner-picture {
@@ -65,6 +68,10 @@ section {
 	margin: 30px;
 }
 
+.home-section > h2 {
+	text-align: center;
+}
+
 #home-about * {
 	font-weight: 700;
 	font-size: 1.25em;
@@ -74,18 +81,25 @@ section {
 	text-align: center;
 }
 
-#home-pr {
+.card-box {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 
-#home-pr > * {
+.card-box > * {
 	margin: 10px;
 	max-width: 200px;
 }
 
-#home-pr img {
+.card-box img {
 	width: 100%;
+}
+
+.card-box .read-more {
+	background-color: black;
+	color: white;
+	padding: 10px 30px 10px 30px;
+	border-radius: 5px;
 }
 
