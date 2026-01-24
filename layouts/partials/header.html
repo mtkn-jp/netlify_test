@@ -5,11 +5,15 @@
       <img src="{{ site.Params.logo | absURL }}" alt="{{site.Title}}">
       {{ else }}
 		{{ if eq .Path "/" }}
-		<h1 id="home-h1">
+		<h1 id="site-title">
+		{{ else }}
+		<div id="site-title">
 		{{ end }}
       {{site.Title}}
 		{{ if eq .Path "/" }}
 		</h1>
+		{{ else }}
+		</div>
 		{{ end }}
       {{ end }}
     </a>
