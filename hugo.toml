@@ -41,19 +41,19 @@ copyright = "Copyright &copy; 2021 Yuki Okugawa; Powered by [Kross Hugo](https:/
 
 # social site
 [[params.social]]
-icon = "ti-facebook"
+icon = "/images/facebook.svg"
 title = "Facebook"
 linkText = "kinokawa.string"
 URL = "https://www.facebook.com/kinokawa.string/"
 
 [[params.social]]
-icon = "ti-instagram"
+icon = "/images/instagram.svg"
 title = "Instagram"
 linkText = "kinogen_string"
 URL = "https://www.instagram.com/kinogen_string/"
 
 [[params.social]]
-icon = "ti-email"
+icon = "/images/email.svg"
 title = "Email"
 linkText = "kinokawa.string@gmail.com"
 URL = "mailto:kinokawa.string@gmail.com"

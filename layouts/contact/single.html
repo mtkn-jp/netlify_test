@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ partial "page-title.html" . }}
+
+		{{ with .Resources.GetMatch .Params.image }}
+			{{ $jpgImg := .Resize (printf "%dx%d jpg" .Width .Height) }}
+			<picture>
+				<img width="{{ .Width }}" height="{{ .Height }}" src="{{ $jpgImg.RelPermalink }}" alt="{{ .Title }}">
+			</picture>
+		{{ end }}
+            {{.Content }}
+
+{{ end }}

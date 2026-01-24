@@ -64,6 +64,18 @@ body {
 	object-fit: cover;
 }
 
+.social img {
+	width: 25px;
+	margin: 5px;
+}
+
+.social {
+	list-style: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 section {
 	margin: 30px;
 }
