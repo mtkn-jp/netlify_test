@@ -61,16 +61,16 @@
   </section>
   {{ end }}
 
-  {{ if site.Data.homepage.blog.enable }}
+  {{ if site.Data.homepage.news.enable }}
   <section class="home-section">
-  <!-- blog -->
-          <h2>{{site.Data.homepage.blog.title | markdownify }}</h2>
+  <!-- news -->
+          <h2>{{site.Data.homepage.news.title | markdownify }}</h2>
 		<div class="card-box">
-        {{ range (first 3 (where .Site.RegularPages "Section" "blog")).ByDate.Reverse }}
+        {{ range (first 3 (where .Site.RegularPages "Section" "news")).ByDate.Reverse }}
         {{ .Render "post" }}
         {{ end }}
 		</div>
-  <!-- /blog -->
+  <!-- /news -->
 	</section>
   {{ end }}
 

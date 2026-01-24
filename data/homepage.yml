@@ -39,8 +39,13 @@ activitie:
         "入団希望、見学希望の方は<a href='mailto:kinokawa.string@gmail.com'>kinokawa.string@gmail.com</a>までご連絡下さい。"
       highlighted : false
 
-# blog
-blog:
+# news
+news:
   enable : true
-  title : "Blogs"
+  title : "News"
+  # news post comes from "content/news" folder
+
+blog:
+  enable: true
+  title: "Blog"
   # blog post comes from "content/blog" folder

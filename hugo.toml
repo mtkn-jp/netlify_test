@@ -16,14 +16,19 @@ name = "About"
 weight = 1
 
 [[menu.main]]
+URL = "news/"
+name = "News"
+weight = 2
+
+[[menu.main]]
 URL = "blog/"
 name = "Blog"
-weight = 2
+weight = 3
 
 [[menu.main]]
 URL = "contact/"
 name = "Contact"
-weight = 3
+weight = 4
 
 
 # default parameters
