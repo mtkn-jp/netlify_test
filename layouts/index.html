@@ -1,7 +1,6 @@
 {{ define "main" }}
 
-	<div id="home-banner">
-  <h1 id="home-banner-text">{{ site.Data.homepage.banner.title | safeHTML }}</h1>
+<div id="home-banner">
   {{ if site.Data.homepage.topImage }}
 		{{ with resources.Get site.Data.homepage.topImage }}
 			{{ $jpgImg := .Resize (printf "%dx%d jpg" .Width .Height) }}
@@ -11,36 +10,45 @@
 		{{ end }}
   {{ else }}
   {{ end }}
+  <h1 id="home-banner-text">{{ site.Data.homepage.banner.title | safeHTML }}</h1>
+</div>
 
     <ul>
       {{ range site.Params.social }}
       <li>{{.title}}: <a href="{{.URL | safeURL }}">{{.linkText}}</a></li>
       {{ end }}
     </ul>
+
   {{ if site.Data.homepage.about.enable }}
-	  <!-- about -->
+  <section>
+	  <div id="home-about">
 	  {{ with site.Data.homepage.about }}
 	  <p>{{.content | markdownify}}</p>
 	  {{ if .button.enable }}
 	  {{ with .button }}
+	  <div id="home-about-link">
 	  <a href="{{ .URL | absURL }}">{{.label}}</a>
+	  </div>
 	  {{ end }}
 	  {{ end }}
 	  {{ end }}
-	  <!-- /about -->
+	</div>
+</section>
   {{ end }}
-  </div>
 
   {{ if site.Data.homepage.pr.enable }}
+  <section>
   <h2>{{site.Data.homepage.pr.category }}</h2>
 	<div id="home-pr">
 		{{ range (first 5 ( where .Site.Pages ".Params.categories" "intersect" (slice site.Data.homepage.pr.category) )).ByDate.Reverse }}
         {{ .Render "post" }}
         {{ end }}
 	</div>
+	</section>
   {{ end }}
 
   {{ if site.Data.homepage.activitie.enable }}
+  <section>
   {{ with site.Data.homepage.activitie }}
   <!-- activities -->
           <h2 class="section-title">{{ .title | markdownify }}</h2>
@@ -51,15 +59,18 @@
         {{ end }}
   <!-- /activities -->
   {{ end }}
+  </section>
   {{ end }}
 
   {{ if site.Data.homepage.blog.enable }}
+  <section>
   <!-- blog -->
           <h2 class="section-title">{{site.Data.homepage.blog.title | markdownify }}</h2>
         {{ range (first 3 (where .Site.RegularPages "Section" "blog")).ByDate.Reverse }}
         {{ .Render "post" }}
         {{ end }}
   <!-- /blog -->
+	</section>
   {{ end }}
 
 

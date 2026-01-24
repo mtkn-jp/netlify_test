@@ -1,5 +1,9 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+
 header a {
-  text-decoration: none;
   color: white;
 }
 
@@ -8,9 +12,6 @@ header nav {
   justify-content: space-between;
   background-color: black;
   padding: 20px;
-}
-
-header nav ul {
 }
 
 header .home {
@@ -32,15 +33,43 @@ body {
 	margin: 0;
 }
 
+#home-banner {
+	height: min(100%, 400px);
+	position: relative
+}
+
 #home-banner-text {
 	color: white;
+	position: relative;
+	margin: 0;
+	padding: 10%;
+}
+
+#home-banner-picture {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 	position: absolute;
-	top: 20%;
-	left: 5%;
+	z-index: 0;
 }
 
 #home-banner-picture img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section {
+	margin: 30px;
+}
+
+#home-about * {
+	font-weight: 700;
+	font-size: 1.25em;
+}
+
+#home-about-link {
+	text-align: center;
 }
 
 #home-pr {
@@ -57,3 +86,4 @@ body {
 #home-pr img {
 	width: 100%;
 }
+

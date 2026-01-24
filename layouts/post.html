@@ -1,5 +1,4 @@
 <div>
-<h2><a href="{{.RelPermalink}}">{{.Title }}</a></h2>
 <a href="{{.RelPermalink}}" title="{{.Title }}">
 	{{ with .Resources.GetMatch .Params.image }}
 			{{ $jpgImg := .Resize "500x jpg" }}
@@ -8,6 +7,7 @@
 				</picture>
 	{{ end }}
 </a>
+<h2><a href="{{.RelPermalink}}">{{.Title }}</a></h2>
 <p>{{.Summary}}{{if .Truncated}}……{{end}}</p>
 <a href="{{.RelPermalink}}">Read More</a>
 </div>
