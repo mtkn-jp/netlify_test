@@ -50,27 +50,23 @@
   {{ if site.Data.homepage.activitie.enable }}
   <section class="home-section">
   {{ with site.Data.homepage.activitie }}
-  <!-- activities -->
           <h2>{{ .title | markdownify }}</h2>
         {{ range .item }}
                 <h4>{{.title}}</h4>
               <div>{{.content | markdownify}}</div>
         {{ end }}
-  <!-- /activities -->
   {{ end }}
   </section>
   {{ end }}
 
-  {{ if site.Data.homepage.news.enable }}
+  {{ if site.Data.homepage.blog.enable }}
   <section class="home-section">
-  <!-- news -->
-          <h2>{{site.Data.homepage.news.title | markdownify }}</h2>
+          <h2>{{site.Data.homepage.blog.title | markdownify }}</h2>
 		<div class="card-box">
-        {{ range (first 3 (where .Site.RegularPages "Section" "news")).ByDate.Reverse }}
+        {{ range (first 3 (where .Site.RegularPages "Section" "blog")).ByDate.Reverse }}
         {{ .Render "post" }}
         {{ end }}
 		</div>
-  <!-- /news -->
 	</section>
   {{ end }}
 
