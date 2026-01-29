@@ -144,6 +144,12 @@ footer #footer-socials {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+footer #footer-socials > div {
+	width: max(15rem, 33%);
+	text-align: center;
 }
 
 #footer-copyright {
