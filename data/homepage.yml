@@ -5,10 +5,6 @@ banner:
 topImage:
   "images/topImage.jpg"
 
-pr:
-  enable: true
-  category: "演奏会情報"
-
 # about
 about:
   enable : true

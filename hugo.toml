@@ -30,7 +30,6 @@ URL = "contact/"
 name = "Contact"
 weight = 4
 
-
 # default parameters
 [params]
 home = "Home"
@@ -38,6 +37,11 @@ logo = ""
 author = "Yuki Okugawa"
 description = "きのかわ弦楽合奏団ホームページ"
 copyright = "Copyright &copy; 2021 Yuki Okugawa; Powered by [Kross Hugo](https://github.com/themefisher/kross-hugo)"
+
+[taxonomies]
+author = 'author'
+category = 'categories'
+tag = 'tags'
 
 # social site
 [[params.social]]

@@ -1,7 +1,7 @@
 ---
 title: "コミュニティコンサート vol.5 のおしらせ"
-date: 2025-05-12T00:00:00+09:00
-publishDate: 2025-05-12T00:00:00+09:00
+date: 2025-12-04T00:00:00+09:00
+publishDate: 2025-12-04T00:00:00+09:00
 image: "poster.jpg"
 author: "Yuki Okugawa"
 categories: ["演奏会情報"]
