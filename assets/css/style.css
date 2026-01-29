@@ -9,6 +9,7 @@ header a {
 
 header nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: black;
   padding: 20px;
@@ -18,16 +19,18 @@ header #site-title {
   font-size: 1.26rem;
   font-weight: 700;
   margin: 0;
+  white-space: nowrap;
 }
 
 header .menu {
   display: flex;
   margin: 0;
+  padding: 0;
+  gap: 10px;
 }
 
 header .menu-item {
   list-style: none;
-  margin-left: 10px;
 }
 
 body {
@@ -81,6 +84,9 @@ body {
 
 section {
 	margin: 30px;
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #main {
