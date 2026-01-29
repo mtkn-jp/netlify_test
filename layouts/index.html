@@ -19,8 +19,8 @@
     </ul>
 </div>
 
+<div id="home-main">
   {{ if site.Data.homepage.about.enable }}
-  <section class="home-section">
 	  <div id="home-about">
 	  {{ with site.Data.homepage.about }}
 	  <p>{{.content | markdownify}}</p>
@@ -33,22 +33,18 @@
 	  {{ end }}
 	  {{ end }}
 	</div>
-</section>
   {{ end }}
 
   {{ if site.Data.homepage.pr.enable }}
-  <section class="home-section">
   <h2>{{site.Data.homepage.pr.category }}</h2>
 	<div class="card-box">
 		{{ range (first 3 ( where .Site.Pages ".Params.categories" "intersect" (slice site.Data.homepage.pr.category) )).ByDate.Reverse }}
         {{ .Render "post" }}
         {{ end }}
 	</div>
-	</section>
   {{ end }}
 
   {{ if site.Data.homepage.activitie.enable }}
-  <section class="home-section">
   {{ with site.Data.homepage.activitie }}
           <h2>{{ .title | markdownify }}</h2>
 	<div class="card-box">
@@ -60,19 +56,15 @@
         {{ end }}
 		</div>
   {{ end }}
-  </section>
   {{ end }}
 
   {{ if site.Data.homepage.blog.enable }}
-  <section class="home-section">
           <h2>{{site.Data.homepage.blog.title | markdownify }}</h2>
 		<div class="card-box">
         {{ range (first 3 (where .Site.RegularPages "Section" "blog")).ByDate.Reverse }}
         {{ .Render "post" }}
         {{ end }}
 		</div>
-	</section>
   {{ end }}
-
-
+</div>
 {{ end }}

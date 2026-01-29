@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div class="content">
   {{ partial "page-title.html" . }}
 
 		{{ with .Resources.GetMatch .Params.image }}
@@ -8,5 +9,5 @@
 			</picture>
 		{{ end }}
             {{.Content }}
-
+</div>
 {{ end }}
