@@ -1,7 +1,11 @@
 <footer>
+	<div id="footer-socials">
         {{ range site.Params.social }}
+		<div>
           <h5>{{.title}}</h5>
           <p><a href="{{.URL | safeURL }}">{{.linkText}}</a></p>
+		</div>
         {{ end }}
-    <p>{{ site.Params.copyright | markdownify }}</p>
+	</div>
+    <div id="footer-copyright">{{ site.Params.copyright | markdownify }}</div>
 </footer>
