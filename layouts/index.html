@@ -35,10 +35,10 @@
 	</div>
   {{ end }}
 
-  {{ if site.Data.homepage.pr.enable }}
-  <h2>{{site.Data.homepage.pr.category }}</h2>
+  {{ if site.Data.homepage.events.enable }}
+  <h2>{{site.Data.homepage.events.title }}</h2>
 	<div class="card-box">
-		{{ range (first 3 ( where .Site.Pages ".Params.categories" "intersect" (slice site.Data.homepage.pr.category) )).ByDate.Reverse }}
+        {{ range (first 3 (where .Site.RegularPages "Section" "events")).ByDate.Reverse }}
         {{ .Render "post" }}
         {{ end }}
 	</div>

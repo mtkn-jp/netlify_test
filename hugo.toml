@@ -16,8 +16,8 @@ name = "About"
 weight = 1
 
 [[menu.main]]
-URL = "news/"
-name = "News"
+URL = "events/"
+name = "Events"
 weight = 2
 
 [[menu.main]]
