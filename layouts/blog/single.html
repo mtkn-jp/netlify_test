@@ -8,7 +8,8 @@
 				<img width="{{ .Width }}" height="{{ .Height }}" src="{{ $jpgImg.RelPermalink }}" alt="{{ .Title }}">
 			</picture>
 		{{ end }}
-          <p>Published on {{ .PublishDate.Format "Jan 02, 2006" }} by <a href="/author/{{.Params.author}}">{{.Params.author}}</a></p>
+		{{ $author_page := index (where (where .Site.Pages "Section" "members") ".Title" .Params.author) 0 }}
+          <p>Published on {{ .PublishDate.Format "Jan 02, 2006" }} by <a href="{{ $author_page.RelPermalink }}">{{.Params.author}}</a></p>
             {{.Content }}
 </div>
 {{ end }}

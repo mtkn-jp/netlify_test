@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="content">
+  {{ partial "page-title.html" . }}
+
+		{{ with .Resources.GetMatch .Params.image }}
+			{{ $jpgImg := .Resize (printf "%dx%d jpg" .Width .Height) }}
+			<picture>
+				<img src="{{ $jpgImg.RelPermalink }}" alt="{{ .Title }}">
+			</picture>
+		{{ end }}
+            {{.Content }}
+
+		<ul>
+		{{ range (where (where .Site.RegularPages "Section" "blog") ".Params.author" $.Title) }}
+		<li>
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		</li>
+		{{ else }}
+		まだなにも書いていません。
+		{{ end }}
+		</ul>
+</div>
+{{ end }}
