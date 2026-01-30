@@ -60,11 +60,13 @@
 
   {{ if site.Data.homepage.blog.enable }}
           <h2>{{site.Data.homepage.blog.title | markdownify }}</h2>
-		<div class="card-box">
+		  <ul>
         {{ range (first 3 (where .Site.RegularPages "Section" "blog")).ByDate.Reverse }}
+		<li>
         {{ .Render "post" }}
+		</li>
         {{ end }}
-		</div>
+		</ul>
   {{ end }}
 </div>
 {{ end }}

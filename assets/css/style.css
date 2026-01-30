@@ -106,7 +106,6 @@ body {
 }
 
 .content {
-	max-width: 1140px;
 	margin-left: 5vw;
 	margin-right: 5vw;
 	flex-grow: 1;
@@ -135,8 +134,14 @@ body {
 }
 
 footer {
+	background-color: #222;
+	color: #aaa;
 	display: flex;
 	flex-direction: column;
+}
+
+footer a {
+	color: white;
 }
 
 footer #footer-socials {
