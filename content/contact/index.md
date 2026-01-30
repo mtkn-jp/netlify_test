@@ -8,4 +8,3 @@ draft: false
 [Facebook](https://www.facebook.com/kinokawa.string/), [Instagram](https://www.instagram.com/kinogen_string/)のDMも受け付けています。
 
 入団希望、見学希望の方はお気軽にご連絡下さい。
-その他、楽器、演奏に関するご相談も歓迎です。

@@ -21,22 +21,27 @@ name = "Events"
 weight = 2
 
 [[menu.main]]
+URL = "schedule/"
+name = "Schedule"
+weight = 3
+
+[[menu.main]]
 URL = "blog/"
 name = "Blog"
-weight = 3
+weight = 4
 
 [[menu.main]]
 URL = "contact/"
 name = "Contact"
-weight = 4
+weight = 5
 
 # default parameters
 [params]
 home = "Home"
 logo = ""
-author = "Yuki Okugawa"
+author = "Matsuda Kenji"
 description = "きのかわ弦楽合奏団ホームページ"
-copyright = "Copyright &copy; 2021 Yuki Okugawa; Powered by [Kross Hugo](https://github.com/themefisher/kross-hugo)"
+copyright = "Copyright &copy; 2021 Yuki Okugawa"
 
 [taxonomies]
 author = 'author'

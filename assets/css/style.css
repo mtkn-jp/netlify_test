@@ -138,6 +138,23 @@ body {
 	border-radius: 5px;
 }
 
+table.schedule {
+	width: min(90%, 800px);
+	margin: 10px auto;
+	border-collapse: collapse;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.schedule th, .schedule td {
+	vertical-align: top;
+	padding: 0.6rem;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #eee;
+}
+
 footer {
 	background-color: #222;
 	color: #aaa;

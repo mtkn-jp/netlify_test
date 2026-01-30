@@ -8,7 +8,6 @@
 				<img src="{{ $jpgImg.RelPermalink }}" alt="{{ .Title }}">
 			</picture>
 		{{ end }}
-          <p>Published on {{ .PublishDate.Format "Jan 02, 2006" }} by <span class="text-primary">{{.Params.author}}</span></p>
             {{.Content }}
 </div>
 {{ end }}
