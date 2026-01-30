@@ -111,10 +111,15 @@ body {
 	flex-grow: 1;
 }
 
+.content img {
+	max-width: 100%;
+}
+
 .card-box {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	margin-bottom: 1rem;
 }
 
 .card-box > * {
