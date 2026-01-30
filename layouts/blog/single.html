@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="content">
+  {{ partial "page-title.html" . }}
+
+		{{ with .Resources.GetMatch .Params.image }}
+			{{ $jpgImg := .Resize (printf "%dx%d jpg" .Width .Height) }}
+			<picture>
+				<img width="{{ .Width }}" height="{{ .Height }}" src="{{ $jpgImg.RelPermalink }}" alt="{{ .Title }}">
+			</picture>
+		{{ end }}
+          <p>Published on {{ .PublishDate.Format "Jan 02, 2006" }} by <a href="/author/{{.Params.author}}">{{.Params.author}}</a></p>
+            {{.Content }}
+</div>
+{{ end }}
