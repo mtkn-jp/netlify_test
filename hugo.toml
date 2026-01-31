@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "localhost:1313"
+baseURL = "https://mtkn-jp.github.io/netlify_test/"
 languageCode = "ja-jp"
 summaryLength = "100"
 hasCJKLanguage = true
