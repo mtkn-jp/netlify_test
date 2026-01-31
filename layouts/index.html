@@ -14,7 +14,7 @@
 
     <ul class="social">
       {{ range site.Params.social }}
-      <li><a href="{{.URL | safeURL }}"><img src="{{.icon | safeURL}}" alt="{{.linkText}}"></a></li>
+      <li><a href="{{.URL | safeURL }}"><img src="{{.icon | relURL}}" alt="{{.linkText}}"></a></li>
       {{ end }}
     </ul>
 </div>

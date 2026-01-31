@@ -50,19 +50,19 @@ tag = 'tags'
 
 # social site
 [[params.social]]
-icon = "/images/facebook.svg"
+icon = "images/facebook.svg"
 title = "Facebook"
 linkText = "kinokawa.string"
 URL = "https://www.facebook.com/kinokawa.string/"
 
 [[params.social]]
-icon = "/images/instagram.svg"
+icon = "images/instagram.svg"
 title = "Instagram"
 linkText = "kinogen_string"
 URL = "https://www.instagram.com/kinogen_string/"
 
 [[params.social]]
-icon = "/images/email.svg"
+icon = "images/email.svg"
 title = "Email"
 linkText = "kinokawa.string@gmail.com"
 URL = "mailto:kinokawa.string@gmail.com"

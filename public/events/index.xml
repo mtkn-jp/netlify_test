@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Events on きのかわ弦楽合奏団</title>
-    <link>https://mtkn-jp.github.io/netlify_test/events/</link>
+    <link>http://localhost:1313/netlify_test/events/</link>
     <description>Recent content in Events on きのかわ弦楽合奏団</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://mtkn-jp.github.io/netlify_test/events/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/netlify_test/events/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>コミュニティコンサート vol.5 のおしらせ</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20251204/</link>
+      <link>http://localhost:1313/netlify_test/events/20251204/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20251204/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20251204/</guid>
       <description>&lt;p&gt;どなたでも楽しめるクラシック＆ポップスのコンサートを開催します！&lt;/p&gt;</description>
     </item>
     <item>
       <title>第8回定期演奏会のおしらせ</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20250512/</link>
+      <link>http://localhost:1313/netlify_test/events/20250512/</link>
       <pubDate>Mon, 12 May 2025 00:00:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20250512/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20250512/</guid>
       <description>&lt;p&gt;第8回定期演奏会では、音楽の歴史の中で名曲と言われ、人々に愛されてきた作品を取り上げます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>さくらコンサート 開催のおしらせ</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20250214/</link>
+      <link>http://localhost:1313/netlify_test/events/20250214/</link>
       <pubDate>Fri, 14 Feb 2025 00:00:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20250214/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20250214/</guid>
       <description></description>
     </item>
     <item>
       <title>コミュニティコンサート vol.5 のおしらせ</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20241125/</link>
+      <link>http://localhost:1313/netlify_test/events/20241125/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20241125/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20241125/</guid>
       <description>&lt;p&gt;2025年1月12日（日）、きのかわ弦楽合奏団による「コミュニティコンサート vol.5」が開催されます！&lt;/p&gt;</description>
     </item>
     <item>
       <title>北コミフェスタ 出演のおしらせ</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20240925/</link>
+      <link>http://localhost:1313/netlify_test/events/20240925/</link>
       <pubDate>Wed, 25 Sep 2024 00:00:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20240925/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20240925/</guid>
       <description>&lt;p&gt;10月27日(日)、和歌山市北コミュニティセンターにて北コミフェスタが開催されます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>第7回定期演奏会のおしらせ</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20240426/</link>
+      <link>http://localhost:1313/netlify_test/events/20240426/</link>
       <pubDate>Fri, 26 Apr 2024 00:00:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20240426/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20240426/</guid>
       <description>&lt;p&gt;第7回定期演奏会では、偉大なJ.S.バッハを父に持ち、古典派の基礎を築き上げたC.P.E.バッハのチェロ協奏曲を前半に演奏します。&lt;/p&gt;</description>
     </item>
     <item>
       <title>コミュニティコンサート vol.4 のおしらせ</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20231204/</link>
+      <link>http://localhost:1313/netlify_test/events/20231204/</link>
       <pubDate>Mon, 04 Dec 2023 00:00:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20231204/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20231204/</guid>
       <description>&lt;p&gt;和歌山市北コミュニティセンターにて第4回目となるコミュニティコンサートを開催いたします。&lt;/p&gt;</description>
     </item>
     <item>
       <title>北コミフェスタ 出演のおしらせ</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20231021/</link>
+      <link>http://localhost:1313/netlify_test/events/20231021/</link>
       <pubDate>Sun, 22 Oct 2023 00:00:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20231021/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20231021/</guid>
       <description>&lt;p&gt;10月28日(土)と29日(日)、和歌山市北コミュニティセンターにて北コミフェスタが開催されます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>コミュニティコンサート vol.3 のおしらせ</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20221028/</link>
+      <link>http://localhost:1313/netlify_test/events/20221028/</link>
       <pubDate>Fri, 28 Oct 2022 15:30:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20221028/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20221028/</guid>
       <description>&lt;p&gt;今年はクリスマスに、和歌山市北コミュニティセンターにて第3回目となるコミュニティコンサートを開催いたします。&lt;/p&gt;</description>
     </item>
     <item>
       <title>第5回定演を開催しました</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20220710/</link>
+      <link>http://localhost:1313/netlify_test/events/20220710/</link>
       <pubDate>Sun, 10 Jul 2022 19:30:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20220710/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20220710/</guid>
       <description>&lt;p&gt;7月10日、第5回定期演奏会を無事に開催することができました。&lt;/p&gt;</description>
     </item>
     <item>
       <title>第6回定期演奏会のおしらせ</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20230511/</link>
+      <link>http://localhost:1313/netlify_test/events/20230511/</link>
       <pubDate>Thu, 11 May 2023 12:29:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20230511/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20230511/</guid>
       <description>&lt;p&gt;結成 10 年を記念した本公演では、楽聖と呼ばれたベートーヴェンの作品を特集しています。&lt;/p&gt;</description>
     </item>
     <item>
       <title>第5回定期演奏会のおしらせ</title>
-      <link>https://mtkn-jp.github.io/netlify_test/events/20220509/</link>
+      <link>http://localhost:1313/netlify_test/events/20220509/</link>
       <pubDate>Mon, 09 May 2022 12:29:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/events/20220509/</guid>
+      <guid>http://localhost:1313/netlify_test/events/20220509/</guid>
       <description>&lt;p&gt;第5回では、古典派作品を特集します。&lt;/p&gt;</description>
     </item>
   </channel>
