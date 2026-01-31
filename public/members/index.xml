@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Members on きのかわ弦楽合奏団</title>
+    <link>//localhost:1313/members/</link>
+    <description>Recent content in Members on きのかわ弦楽合奏団</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Fri, 30 Jan 2026 16:27:59 +0900</lastBuildDate>
+    <atom:link href="//localhost:1313/members/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>松田 健嗣</title>
+      <link>//localhost:1313/members/kenji-matsuda/</link>
+      <pubDate>Fri, 30 Jan 2026 16:27:59 +0900</pubDate>
+      <guid>//localhost:1313/members/kenji-matsuda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>きのげん 二郎</title>
+      <link>//localhost:1313/members/jiro-kinogen/</link>
+      <pubDate>Fri, 30 Jan 2026 16:19:01 +0900</pubDate>
+      <guid>//localhost:1313/members/jiro-kinogen/</guid>
+      <description>&lt;p&gt;あああああ&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>きのげん 太郎</title>
+      <link>//localhost:1313/members/taro-kinogen/</link>
+      <pubDate>Fri, 30 Jan 2026 16:14:58 +0900</pubDate>
+      <guid>//localhost:1313/members/taro-kinogen/</guid>
+      <description>&lt;p&gt;こんにちは&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
