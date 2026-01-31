@@ -1,0 +1,184 @@
+a {
+	text-decoration: none;
+}
+
+header a {
+  color: white;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px;
+}
+
+header #site-title {
+  font-size: 1.26rem;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+}
+
+header .menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+header .menu-item {
+  list-style: none;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#home-banner {
+	height: min(100%, 400px);
+	position: relative;
+	background-color: black;
+}
+
+#home-banner-text {
+	color: white;
+	font-size: clamp(1.5rem, 3vw + 1rem, 5rem);
+	font-weight: 700; 
+	position: relative;
+	margin: 0;
+	padding: 10% 0 10% 20%;
+}
+
+#home-banner-picture {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	z-index: 0;
+	mask-image: linear-gradient(transparent, black);
+}
+
+#home-banner-picture img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.social img {
+	width: 25px;
+	margin: 5px;
+}
+
+.social {
+	list-style: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#home-main {
+	margin: 30px;
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	flex-grow: 1;
+}
+
+#home-main > h2 {
+	text-align: center;
+	font-size: 2rem;
+}
+
+#home-about * {
+	font-weight: 700;
+	font-size: 1.25rem;
+}
+
+#home-about-link {
+	text-align: center;
+}
+
+.content {
+	margin-left: 5vw;
+	margin-right: 5vw;
+	flex-grow: 1;
+}
+
+.content img {
+	max-width: 100%;
+}
+
+.card-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 1rem;
+}
+
+.card-box > * {
+	margin: 10px;
+	max-width: 200px;
+}
+
+.card-box img {
+	width: 100%;
+}
+
+.card-box .read-more {
+	background-color: black;
+	color: white;
+	padding: 10px 30px 10px 30px;
+	border-radius: 5px;
+}
+
+table.schedule {
+	width: min(90%, 800px);
+	margin: 10px auto;
+	border-collapse: collapse;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.schedule th, .schedule td {
+	vertical-align: top;
+	padding: 0.6rem;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #eee;
+}
+
+footer {
+	background-color: #222;
+	color: #aaa;
+	display: flex;
+	flex-direction: column;
+}
+
+footer a {
+	color: white;
+}
+
+footer #footer-socials {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+footer #footer-socials > div {
+	width: max(15rem, 33%);
+	text-align: center;
+}
+
+#footer-copyright {
+	text-align: center;
+	padding: 1rem;
+}

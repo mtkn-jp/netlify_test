@@ -1,0 +1,35 @@
+<header>
+  <nav>
+    <a class="home" href="{{ site.BaseURL }}">
+      {{ if site.Params.logo }}
+      <img src="{{ site.Params.logo | absURL }}" alt="{{site.Title}}">
+      {{ else }}
+		{{ if eq .Path "/" }}
+		<h1 id="site-title">
+		{{ else }}
+		<div id="site-title">
+		{{ end }}
+      {{site.Title}}
+		{{ if eq .Path "/" }}
+		</h1>
+		{{ else }}
+		</div>
+		{{ end }}
+      {{ end }}
+    </a>
+
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="{{ site.BaseURL }}">{{ with site.Params.Home }} {{ . }} {{ end }}</a>
+        </li>
+        {{ $current := . }}
+        {{ range site.Menus.main }}
+        {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+        {{ $active = or $active (eq .Name $current.Title) }}
+        <li class="menu-item {{ if $active }}active{{ end }}">
+          <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+  </nav>
+</header>

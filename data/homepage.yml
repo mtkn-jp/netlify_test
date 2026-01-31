@@ -5,10 +5,6 @@ banner:
 topImage:
   "images/topImage.jpg"
 
-pr:
-  enable: true
-  category: "演奏会情報"
-
 # about
 about:
   enable : true
@@ -18,8 +14,8 @@ about:
     label : "know more"
     URL : "about"
 
-# service
-service:
+# activities
+activitie:
   enable : true
   title : "Activities"
   item:
@@ -39,8 +35,13 @@ service:
         "入団希望、見学希望の方は<a href='mailto:kinokawa.string@gmail.com'>kinokawa.string@gmail.com</a>までご連絡下さい。"
       highlighted : false
 
-# blog
-blog:
+# events
+events:
   enable : true
-  title : "Blogs"
+  title : "Events"
+  # events post comes from "content/events" folder
+
+blog:
+  enable: true
+  title: "Blog"
   # blog post comes from "content/blog" folder

@@ -1,5 +1,5 @@
----
-title: "Blog"
-description: "きのかわ弦楽団の活動記録です。"
-draft: false
----
++++
+draft = false
+title = 'Blog'
+description = "きのかわ弦楽合奏団の活動記録です。"
++++

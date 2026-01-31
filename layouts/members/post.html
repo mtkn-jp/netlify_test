@@ -1,0 +1,11 @@
+<div>
+<a href="{{.RelPermalink}}" title="{{.Title }}">
+	{{ with .Resources.GetMatch .Params.image }}
+			{{ $jpgImg := .Resize "500x jpg" }}
+				<picture>
+					<img src="{{ $jpgImg.RelPermalink }}" alt="{{ .Title }}">
+				</picture>
+	{{ end }}
+</a>
+<a href="{{.RelPermalink}}">{{.Title }}</a>
+</div>

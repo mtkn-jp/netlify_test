@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="content">
+  {{ partial "page-title.html" . }}
+
+		{{ with .Resources.GetMatch .Params.image }}
+			{{ $jpgImg := .Resize (printf "%dx%d jpg" .Width .Height) }}
+			<picture>
+				<img width="{{ .Width }}" height="{{ .Height }}" src="{{ $jpgImg.RelPermalink }}" alt="{{ .Title }}">
+			</picture>
+		{{ end }}
+		{{ $author_page := index (where (where .Site.Pages "Section" "members") ".Title" .Params.author) 0 }}
+          <p>Published on {{ .PublishDate.Format "Jan 02, 2006" }} by <a href="{{ $author_page.RelPermalink }}">{{.Params.author}}</a></p>
+            {{.Content }}
+</div>
+{{ end }}

@@ -1,9 +1,8 @@
 # default configuration
-baseURL = "https://friendly-mousse-622583.netlify.app"
+baseURL = "localhost:1313"
 languageCode = "ja-jp"
 summaryLength = "100"
 hasCJKLanguage = true
-theme = "kinokawa-string-theme"
 title = "きのかわ弦楽合奏団"
 
 # css plugins
@@ -17,62 +16,53 @@ name = "About"
 weight = 1
 
 [[menu.main]]
+URL = "events/"
+name = "Events"
+weight = 2
+
+[[menu.main]]
+URL = "schedule/"
+name = "Schedule"
+weight = 3
+
+[[menu.main]]
 URL = "blog/"
 name = "Blog"
-weight = 2
+weight = 4
 
 [[menu.main]]
 URL = "contact/"
 name = "Contact"
-weight = 3
-
+weight = 5
 
 # default parameters
 [params]
 home = "Home"
 logo = ""
-# theme color
-theme_color = "black"
-# meta description
-author = "Yuki Okugawa"
+author = "Matsuda Kenji"
 description = "きのかわ弦楽合奏団ホームページ"
-# google analytics
-google_analytics_id = "" # Your ID
-# baidu site verification
-baidu_site_verification = "" #Your verification code
-# baidu analytics
-baidu_analytics_id = "" #Your ID
-# copyright
-copyright = "Copyright &copy; 2021 Yuki Okugawa; Powered by [Kross Hugo](https://github.com/themefisher/kross-hugo)"
+copyright = "Copyright &copy; 2021 Yuki Okugawa"
 
-# preloader
-[params.preloader]
-enable = true
-content = "Loading...♪"
-
-# contact
-[params.contact]
-enable = false
-
-# cookies
-[params.cookies]
-enable = false
+[taxonomies]
+author = 'author'
+category = 'categories'
+tag = 'tags'
 
 # social site
 [[params.social]]
-icon = "ti-facebook"
+icon = "/images/facebook.svg"
 title = "Facebook"
 linkText = "kinokawa.string"
 URL = "https://www.facebook.com/kinokawa.string/"
 
 [[params.social]]
-icon = "ti-instagram"
+icon = "/images/instagram.svg"
 title = "Instagram"
 linkText = "kinogen_string"
 URL = "https://www.instagram.com/kinogen_string/"
 
 [[params.social]]
-icon = "ti-email"
+icon = "/images/email.svg"
 title = "Email"
 linkText = "kinokawa.string@gmail.com"
 URL = "mailto:kinokawa.string@gmail.com"
