@@ -9,7 +9,7 @@
 			</picture>
 		{{ end }}
 		{{ $author_page := index (where (where .Site.Pages "Section" "members") ".Title" .Params.author) 0 }}
-          <p>Published on {{ .PublishDate.Format "Jan 02, 2006" }} by <a href="{{ $author_page.RelPermalink }}">{{.Params.author}}</a></p>
+          <p><time>{{ .PublishDate.Format "2006年01月02日" }}</time> 文責: <a href="{{ $author_page.RelPermalink }}">{{.Params.author}}</a></p>
             {{.Content }}
 </div>
 {{ end }}

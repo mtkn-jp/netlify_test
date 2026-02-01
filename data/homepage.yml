@@ -38,7 +38,7 @@ activitie:
 # events
 events:
   enable : true
-  title : "Events"
+  title : "演奏会情報"
   # events post comes from "content/events" folder
 
 blog:

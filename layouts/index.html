@@ -37,11 +37,11 @@
 
   {{ if site.Data.homepage.events.enable }}
   <h2>{{site.Data.homepage.events.title }}</h2>
-	<div class="card-box">
-        {{ range (first 3 (where .Site.RegularPages "Section" "events")).ByDate.Reverse }}
-        {{ .Render "post" }}
-        {{ end }}
-	</div>
+	{{ range (first 1 (where .Site.RegularPages "Section" "events")).ByDate.Reverse }}
+		<div class="card">
+		{{ .Render "post" }}
+		</div>
+	{{ end }}
   {{ end }}
 
   {{ if site.Data.homepage.activitie.enable }}

@@ -92,7 +92,6 @@ body {
 }
 
 #home-main > h2 {
-	text-align: center;
 	font-size: 2rem;
 }
 
@@ -115,23 +114,29 @@ body {
 	max-width: 100%;
 }
 
-.card-box {
+.card {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
 	margin-bottom: 1rem;
 }
 
-.card-box > * {
+.card > * {
 	margin: 10px;
-	max-width: 200px;
 }
 
-.card-box img {
+.card-img {
+	width: max(25%, 300px);
+}
+
+.card img {
 	width: 100%;
 }
 
-.card-box .read-more {
+.card-text {
+	width: max(50%, 300px);
+}
+
+.card-text .read-more {
 	background-color: black;
 	color: white;
 	padding: 10px 30px 10px 30px;
@@ -181,4 +186,8 @@ footer #footer-socials > div {
 #footer-copyright {
 	text-align: center;
 	padding: 1rem;
+}
+
+.flush-right {
+	text-align: right;
 }
