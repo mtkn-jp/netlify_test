@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>きのげん 太郎 on きのかわ弦楽合奏団</title>
-    <link>http://localhost:1313/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E5%A4%AA%E9%83%8E/</link>
+    <link>https://mtkn-jp.github.io/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E5%A4%AA%E9%83%8E/</link>
     <description>Recent content in きのげん 太郎 on きのかわ弦楽合奏団</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sat, 24 Jan 2026 13:23:31 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E5%A4%AA%E9%83%8E/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mtkn-jp.github.io/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E5%A4%AA%E9%83%8E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Blog</title>
-      <link>http://localhost:1313/netlify_test/blog/first-blog/</link>
+      <link>https://mtkn-jp.github.io/netlify_test/blog/first-blog/</link>
       <pubDate>Sat, 24 Jan 2026 13:23:31 +0900</pubDate>
-      <guid>http://localhost:1313/netlify_test/blog/first-blog/</guid>
+      <guid>https://mtkn-jp.github.io/netlify_test/blog/first-blog/</guid>
       <description>&lt;p&gt;きょうもいっぱいれんしゅうした。&lt;/p&gt;</description>
     </item>
   </channel>
