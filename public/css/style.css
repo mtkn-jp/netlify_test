@@ -70,7 +70,7 @@ body {
 }
 
 .social img {
-	width: 25px;
+	width: clamp(1rem, 1vw + 1rem, 3rem);
 	margin: 5px;
 }
 
@@ -78,6 +78,7 @@ body {
 	list-style: none;
 	position: absolute;
 	top: 50%;
+	padding-left: 5%;
 	transform: translateY(-50%);
 }
 

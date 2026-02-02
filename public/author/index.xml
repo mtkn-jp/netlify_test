@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Author on きのかわ弦楽合奏団</title>
-    <link>https://mtkn-jp.github.io/netlify_test/author/</link>
+    <link>http://localhost:1313/netlify_test/author/</link>
     <description>Recent content in Author on きのかわ弦楽合奏団</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Fri, 30 Jan 2026 09:02:29 +0900</lastBuildDate>
-    <atom:link href="https://mtkn-jp.github.io/netlify_test/author/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/netlify_test/author/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>せんせい</title>
-      <link>https://mtkn-jp.github.io/netlify_test/author/%E3%81%9B%E3%82%93%E3%81%9B%E3%81%84/</link>
+      <link>http://localhost:1313/netlify_test/author/%E3%81%9B%E3%82%93%E3%81%9B%E3%81%84/</link>
       <pubDate>Fri, 30 Jan 2026 09:02:29 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/author/%E3%81%9B%E3%82%93%E3%81%9B%E3%81%84/</guid>
+      <guid>http://localhost:1313/netlify_test/author/%E3%81%9B%E3%82%93%E3%81%9B%E3%81%84/</guid>
       <description></description>
     </item>
     <item>
       <title>きのげん 二郎</title>
-      <link>https://mtkn-jp.github.io/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E4%BA%8C%E9%83%8E/</link>
+      <link>http://localhost:1313/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E4%BA%8C%E9%83%8E/</link>
       <pubDate>Fri, 30 Jan 2026 08:34:56 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E4%BA%8C%E9%83%8E/</guid>
+      <guid>http://localhost:1313/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E4%BA%8C%E9%83%8E/</guid>
       <description></description>
     </item>
     <item>
       <title>Yuki Okugawa</title>
-      <link>https://mtkn-jp.github.io/netlify_test/author/yuki-okugawa/</link>
+      <link>http://localhost:1313/netlify_test/author/yuki-okugawa/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/author/yuki-okugawa/</guid>
+      <guid>http://localhost:1313/netlify_test/author/yuki-okugawa/</guid>
       <description></description>
     </item>
     <item>
       <title>きのげん 太郎</title>
-      <link>https://mtkn-jp.github.io/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E5%A4%AA%E9%83%8E/</link>
+      <link>http://localhost:1313/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E5%A4%AA%E9%83%8E/</link>
       <pubDate>Sat, 24 Jan 2026 13:23:31 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E5%A4%AA%E9%83%8E/</guid>
+      <guid>http://localhost:1313/netlify_test/author/%E3%81%8D%E3%81%AE%E3%81%92%E3%82%93-%E5%A4%AA%E9%83%8E/</guid>
       <description></description>
     </item>
   </channel>

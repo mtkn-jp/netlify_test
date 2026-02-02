@@ -47,14 +47,10 @@
   {{ if site.Data.homepage.activitie.enable }}
   {{ with site.Data.homepage.activitie }}
           <h2>{{ .title | markdownify }}</h2>
-	<div class="card-box">
         {{ range .item }}
-			<div class="card">
                 <h4>{{.title}}</h4>
               <div>{{.content | markdownify}}</div>
-			</div>
         {{ end }}
-		</div>
   {{ end }}
   {{ end }}
 
