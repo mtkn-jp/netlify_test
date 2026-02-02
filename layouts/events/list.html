@@ -1,10 +1,20 @@
 {{ define "main" }}
 <div class="content">
   {{ partial "page-title.html" . }}
-	{{ range .Data.Pages.ByPublishDate.Reverse }}
+	<h2>今後の演奏会</h2>
+	{{ range (where .Data.Pages.ByPublishDate.Reverse "Date" "gt" time.Now)}}
+	  <div class="card">
+        {{ .Render "post" }}
+		</div>
+	{{ else }}
+		<p>現在次の演奏会のちらしは作成中です。</p>
+	{{ end }}
+	<h2>過去の演奏会</h2>
+	{{ range (where .Data.Pages.ByPublishDate.Reverse "Date" "lt" time.Now)}}
 	  <div class="card">
         {{ .Render "post" }}
 		</div>
 	{{ end }}
+
 </div>
 {{ end }}

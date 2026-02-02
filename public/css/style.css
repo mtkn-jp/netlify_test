@@ -125,7 +125,7 @@ body {
 }
 
 .card-img {
-	width: max(25%, 300px);
+	width: clamp(min(300px, 100%), 40%, 600px);
 }
 
 .card img {

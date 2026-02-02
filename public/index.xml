@@ -58,18 +58,18 @@
       <description>&lt;p&gt;音程難しい。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>First Blog</title>
-      <link>https://mtkn-jp.github.io/netlify_test/blog/first-blog/</link>
-      <pubDate>Sat, 24 Jan 2026 13:23:31 +0900</pubDate>
-      <guid>https://mtkn-jp.github.io/netlify_test/blog/first-blog/</guid>
-      <description>&lt;p&gt;きょうもいっぱいれんしゅうした。&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>コミュニティコンサート vol.6 のおしらせ</title>
       <link>https://mtkn-jp.github.io/netlify_test/events/20251204/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0900</pubDate>
       <guid>https://mtkn-jp.github.io/netlify_test/events/20251204/</guid>
       <description>&lt;p&gt;どなたでも楽しめるクラシック＆ポップスのコンサートを開催します！&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First Blog</title>
+      <link>https://mtkn-jp.github.io/netlify_test/blog/first-blog/</link>
+      <pubDate>Sat, 24 Jan 2026 13:23:31 +0900</pubDate>
+      <guid>https://mtkn-jp.github.io/netlify_test/blog/first-blog/</guid>
+      <description>&lt;p&gt;きょうもいっぱいれんしゅうした。&lt;/p&gt;</description>
     </item>
     <item>
       <title>第8回定期演奏会のおしらせ</title>
