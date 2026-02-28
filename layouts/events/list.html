@@ -10,11 +10,13 @@
 		<p>現在次の演奏会のちらしは作成中です。</p>
 	{{ end }}
 	<h2>過去の演奏会</h2>
+	<div class="card-box">
 	{{ range (where .Data.Pages.ByPublishDate.Reverse "Date" "lt" time.Now)}}
-	  <div class="card">
-        {{ .Render "post" }}
+		<div class="card">
+			{{ .Render "post" }}
 		</div>
 	{{ end }}
+	</div>
 
 </div>
 {{ end }}

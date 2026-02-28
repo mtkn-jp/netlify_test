@@ -1,4 +1,5 @@
 <div class="card-img">
+<h2><a href="{{.RelPermalink}}">{{.Title }}</a></h2>
 <a href="{{.RelPermalink}}" title="{{.Title }}">
 	{{ with .Resources.GetMatch .Params.image }}
 			{{ $jpgImg := .Resize "500x jpg" }}
@@ -8,10 +9,5 @@
 	{{ end }}
 </a>
 </div>
-<div class="card-text">
-<h2><a href="{{.RelPermalink}}">{{.Title }}</a></h2>
 <p>{{.Summary}}{{if .Truncated}}……{{end}}</p>
-<div class="flush-right">
 <a class="read-more" href="{{.RelPermalink}}">Read More</a>
-</div>
-</div>
