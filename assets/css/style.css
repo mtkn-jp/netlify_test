@@ -3,100 +3,98 @@ a {
 }
 
 header a {
-  color: white;
+	color: white;
 }
 
-header nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: black;
-  padding: 20px;
+nav {
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
 }
 
 header #site-title {
-  font-size: 1.26rem;
-  font-weight: 700;
-  margin: 0;
-  white-space: nowrap;
+	font-size: 1.26rem;
+	font-weight: 700;
+	margin: 0;
+	white-space: nowrap;
 }
 
-header .menu {
-  display: flex;
-  gap: 10px;
-  z-index: 10;
-  background-color: black;
+#home, .menu-item {
+	padding: 0.5rem;
 }
 
 #hamburger-toggle, #hamburger {
 	display: none;
 }
 
+.menu-items {
+	display: flex;
+}
+
 @media (max-width: 640px) {
 	:root {
-		--hamburger-width: 2rem;
-		--hamburger-height: 19px;
-		--hamburger-bar-width: 1px;
-		--hamburger-margin: 20px;
+		--hamburger-width: 32px;
+		--hamburger-bar-width: 4px;
+		--hamburger-gap: 3px;
+		--hamburger-height: calc(var(--hamburger-bar-width)*3 + var(--hamburger-gap)*2);
+		--transition-delay: 0.5s;
 	}
 	.menu {
+		position: relative;
+	}
+	.menu-items {
+		padding: 1rem;
 		flex-direction: column;
+		position: fixed;
+		left: 100%;
 		background-color: black;
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-	.menu > .menu-item {
-		display: none;
-		padding: 10px 30px;
-		margin: 0;
 		z-index: 10;
+		transition: var(--transition-delay);
 	}
-	#hamburger-toggle:checked ~ .menu-item {
-		display: inline;
+	#hamburger-toggle:checked ~ .menu-items {
+		transform: translateX(-100%);
+		transition: var(--transition-delay);
 	}
 	#hamburger {
-		display: inline;
+		display: inline-block;
 		width: var(--hamburger-width);
 		height: var(--hamburger-height);
-		margin: var(--hamburger-margin);
-		padding: 0;
+		position: relative;
+		transition: var(--transition-delay);
 	}
 	#bar1, #bar2, #bar3 {
 		position: absolute;
 		width: var(--hamburger-width);
-		right: var(--hamburger-margin);
-		height: 0;
-		border: solid #eaeaea var(--hamburger-bar-width);
-		border-radius: var(--hamburger-bar-width);
-		transition: 0.5s;
+		height: var(--hamburger-bar-width);
+		background-color: #eaeaea;
+		border-radius: calc(var(--hamburger-bar-width)/2);
+		transition: var(--transition-delay);
 	}
 	#bar2 {
-		top: calc(var(--hamburger-margin) + var(--hamburger-height) / 2);
+		top: calc(var(--hamburger-bar-width) + var(--hamburger-gap));
 	}
 	#bar3 {
-		top: calc(var(--hamburger-margin) + var(--hamburger-height));
+		top: calc(var(--hamburger-bar-width) * 2 + var(--hamburger-gap) * 2);
 	}
-	#hamburger-toggle:checked ~ #hamburger {
-		width: var(--hamburger-height);
-		transition: 0.5s;
-	}
-	#hamburger-toggle:checked ~ #hamburger #bar1 {
+	#hamburger-toggle:checked ~ label #bar1 {
 		width: calc(1.41421356 * var(--hamburger-height));
 		transform-origin: center right;
-		transform: translateY(calc(var(--hamburger-bar-width)/-1.41421356)) rotate(-45deg);
-		transition: 0.5s;
+		transform: translateY(calc(var(--hamburger-bar-width)/-2)) rotate(-45deg);
+		transition: var(--transition-delay);
 	}
-	#hamburger-toggle:checked ~ #hamburger #bar2 {
-		width: var(--hamburger-height);
+	#hamburger-toggle:checked ~ label #bar2 {
+		width: 0;
 		opacity: 0;
-		transition: 0.5s;
+		transform: translateX(var(--hamburger-width));
+		transition: var(--transition-delay);
 	}
-	#hamburger-toggle:checked ~ #hamburger #bar3 {
+	#hamburger-toggle:checked ~ label #bar3 {
 		width: calc(1.41421356 * var(--hamburger-height));
 		transform-origin: center right;
-		transform: translateY(calc(var(--hamburger-bar-width)/1.41421356)) rotate(45deg);
-		transition: 0.5s;
+		transform: translateY(calc(var(--hamburger-bar-width)/2)) rotate(45deg);
+		transition: var(--transition-delay);
 	}
 }
 
