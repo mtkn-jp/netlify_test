@@ -6,8 +6,15 @@
     <description>Recent content on きのかわ弦楽合奏団</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 01 Feb 2026 20:33:48 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 11:40:21 +0900</lastBuildDate>
     <atom:link href="https://mtkn-jp.github.io/netlify_test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Donation</title>
+      <link>https://mtkn-jp.github.io/netlify_test/donation/</link>
+      <pubDate>Wed, 11 Mar 2026 11:40:21 +0900</pubDate>
+      <guid>https://mtkn-jp.github.io/netlify_test/donation/</guid>
+      <description>&lt;div class=&#34;card-box&#34;&gt;&#xA;&#x9;&lt;div class=&#34;card shadow&#34;&gt;&#xA;&#x9;&#x9;&lt;a href=https://buy.stripe.com/test_bJe5kF9hF8HJcRfaLZ8EM03 title=サポーター 松&gt;&#xA;&#x9;&#x9;&#x9;&lt;picture&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;source type=image/png srcset=&#34;supporter_matsu.png&#34;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;img class=&#34;rounded card-img-top&#34; decoding=async src=https://mtkn-jp.github.io/netlify_test/blog/20250512/cover_hu1320921877197306892.jpg alt=cover.jpg&gt;&#xA;&#x9;&#x9;&#x9;&lt;/picture&gt;&#xA;&#x9;&#x9;&lt;/a&gt;&#xA;&#x9;&#x9;&lt;div class=card-body&gt;&#xA;&#x9;&#x9;&#x9;&lt;h4 class=card-title&gt;&lt;a class=text-dark href=https://buy.stripe.com/test_bJe5kF9hF8HJcRfaLZ8EM03&gt;サポーター 松 100円/月&lt;/a&gt;&lt;/h4&gt;&#xA;&#x9;&#x9;&#x9;&lt;p class=cars-text&gt;&#xA;&#x9;&#x9;&#x9;&lt;p&gt;毎月100円支援&lt;/p&gt;</description>
+    </item>
     <item>
       <title>せんせい</title>
       <link>https://mtkn-jp.github.io/netlify_test/members/sensei/</link>

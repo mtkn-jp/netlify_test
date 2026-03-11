@@ -35,6 +35,11 @@ URL = "contact/"
 name = "Contact"
 weight = 5
 
+[[menu.main]]
+URL = "donation/"
+name = "Donation"
+weight = 6
+
 # default parameters
 [params]
 home = "Home"
