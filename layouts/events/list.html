@@ -4,7 +4,7 @@
 	<h2>今後の演奏会</h2>
 	{{ range (where .Data.Pages.ByPublishDate.Reverse "Date" "gt" time.Now)}}
 	  <div class="card">
-        {{ .Render "post" }}
+        {{ .Render "card" }}
 		</div>
 	{{ else }}
 		<p>現在次の演奏会のちらしは作成中です。</p>
@@ -13,7 +13,7 @@
 	<div class="card-box">
 	{{ range (where .Data.Pages.ByPublishDate.Reverse "Date" "lt" time.Now)}}
 		<div class="card">
-			{{ .Render "post" }}
+			{{ .Render "card" }}
 		</div>
 	{{ end }}
 	</div>
